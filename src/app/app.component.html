@@ -1,0 +1,9 @@
+<div class="container">
+  <h4>{{title}}</h4>
+  <input type="text" #inputVal placeholder="Enter something" [(ngModel)]='name'>
+  <h3>{{name}}</h3>
+  <button (click)='checkUpperAndLower(inputVal.value)'>Display</button>
+  <br><br>
+  Uppercase letters:<h2>{{upper}}</h2>
+  Lowercase letters:<h2>{{lower}}</h2>
+</div>
